@@ -1,19 +1,16 @@
 ---
 import "../styles/global.css";
-import {
-  IconCircle,
-  IconEdit,
-  IconTrash,
-} from "@/icons";
+import { IconCircle, IconEdit, IconTrash } from "@/icons";
 ---
 
 <article class="task-item">
-  <button class="task-item__status"> <IconCircle /> </button>
-
-  <span class="task-item__text">Task 1</span>
+  <div class="task-item__info">
+    <button class="btn task-item__status"> <IconCircle /> </button>
+    <span class="task-item__text">Task 1</span>
+  </div>
 
   <div class="task-item__actions">
-    <button class="task-item__edit"> <IconEdit /> </button>
-    <button class="task-item__delete"> <IconTrash /> </button>
+    <button class="btn btn-item task-item__edit"> <IconEdit /> </button>
+    <button class="btn btn-item task-item__delete"> <IconTrash /> </button>
   </div>
 </article>
