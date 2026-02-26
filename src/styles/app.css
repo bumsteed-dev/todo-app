@@ -1,3 +1,11 @@
+.btn {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .app {
   border: 0.1px solid;
   display: flex;
@@ -9,6 +17,7 @@
   border-radius: 20px;
   padding: 30px;
   gap: 30px;
+  background-color: var(--color-onix);
 }
 
 .app-header {
@@ -17,51 +26,129 @@
   width: 100%;
 }
 
+.app-logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--color-tiger-flame);
+}
+
+.app-settings > svg {
+  stroke: var(--color-pate-oak);
+}
+
 .app-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   gap: 20px;
-  max-width: 500px;
+  max-width: 400px;
   width: 100%;
 }
 
 .progress-card {
   display: flex;
   align-items: center;
-  border: 0.1px solid;
+  justify-content: space-between;
+  border: 0.1px solid var(--color-pate-oak);
   border-radius: 20px;
-  padding: 30px;
+  padding: 40px;
   gap: 60px;
 }
+
+.progress-card__info {
+  color: var(--color-pate-oak);
+}
+
 .progress-card__circle {
   height: 30px;
   width: 30px;
-  border: 0.1px solid;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   padding: 60px;
+  background-color: var(--color-tiger-flame);
 }
 
 .progress-card__value {
   font-size: 30px;
+  font-weight: bold;
+  color: var(--color-onix);
 }
 
 .task-input {
-  flex: 1 1 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.task-input__add {
+  padding: 10px;
+  background-color: var(--color-tiger-flame);
+  border-radius: 50%;
+}
+
+.task-input__add > svg {
+  stroke-width: 5;
+}
+
+.task-input__field {
+  border-radius: 15px;
+  height: 40px;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  background-color: var(--color-carbon-black);
+}
+
+.task-input__field::placeholder {
+  font-size: 17px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .task-item {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+  padding: 30px 20px;
+  border: 1px solid var(--color-pate-oak);
+  background-color: var(--color-carbon-black);
+}
+
+.task-item__info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-item__status > svg {
+  stroke: var(--color-tiger-flame);
+}
+
+.task-item__text {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--color-pate-oak);
 }
 
 .task-item__actions {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+}
+
+.btn-item > svg {
+  stroke: var(--color-pate-oak);
 }
