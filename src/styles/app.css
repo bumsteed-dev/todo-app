@@ -1,0 +1,67 @@
+.app {
+  border: 0.1px solid;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 900px;
+  min-height: 70vh;
+  border-radius: 20px;
+  padding: 30px;
+  gap: 30px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.progress-card {
+  display: flex;
+  align-items: center;
+  border: 0.1px solid;
+  border-radius: 20px;
+  padding: 30px;
+  gap: 60px;
+}
+.progress-card__circle {
+  height: 30px;
+  width: 30px;
+  border: 0.1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 60px;
+}
+
+.progress-card__value {
+  font-size: 30px;
+}
+
+.task-input {
+  flex: 1 1 100%;
+}
+
+.task-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-item__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
