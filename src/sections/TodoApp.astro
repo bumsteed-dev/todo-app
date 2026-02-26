@@ -1,42 +1,45 @@
 ---
-
+import TaskList from "../components/TaskList.astro";
+import { IconExit, IconPlus } from "@/icons";
+import "../styles/global.css";
 ---
 
-<div class="app">
+<div class="app container">
   <!-- Header / Logo -->
   <header class="app-header">
-    <span class="app-logo">XEROTODO</span>
+    <span class="app-logo">TodoApp</span>
 
-    <button class="app-settings">
-      <!-- icon -->
-    </button>
+    <button class="app-settings"> <IconExit /> </button>
   </header>
 
-  <!-- Progress Card -->
-  <section class="progress-card">
-    <div class="progress-card__info">
-      <h2 class="progress-card__title">Todo Done</h2>
-      <p class="progress-card__subtitle">keep it up</p>
-    </div>
+  <div class="app-content">
+    <!-- Progress Card -->
+    <section class="progress-card">
+      <div class="progress-card__info">
+        <h2 class="progress-card__title">Todo Done</h2>
+        <p class="progress-card__subtitle">keep it up</p>
+      </div>
 
-    <div class="progress-card__circle">
-      <span class="progress-card__value">1/3</span>
-    </div>
-  </section>
+      <div class="progress-card__circle">
+        <span class="progress-card__value">1/3</span>
+      </div>
+    </section>
 
-  <!-- New Task Input -->
-  <section class="task-input">
-    <input
-      type="text"
-      class="task-input__field"
-      placeholder="write your next task"
-    />
+    <!-- New Task Input -->
+    <section class="task-input">
+      <input
+        type="text"
+        class="task-input__field"
+        placeholder="write your next task"
+      />
 
-    <button class="task-input__add"> + </button>
-  </section>
+      <button class="task-input__add"> <IconPlus /> </button>
+    </section>
 
-  <!-- Task List -->
-  <section class="task-list">
-    <!-- Task item -->
-  </section>
+    <!-- Task List -->
+    <section class="task-list">
+      <!-- Task item -->
+      <TaskList />
+    </section>
+  </div>
 </div>

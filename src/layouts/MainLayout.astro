@@ -1,5 +1,6 @@
 ---
-const title = "Todo App"
+const title = "Todo App";
+import '../styles/global.css';
 ---
 
 <html lang="es">
@@ -10,6 +11,12 @@ const title = "Todo App"
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <slot />
