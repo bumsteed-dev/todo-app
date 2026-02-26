@@ -4,6 +4,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.btn:hover {
+  opacity: 0.85;
+  transform: scale(1.1);
 }
 
 .app {
@@ -13,11 +19,11 @@
   align-items: center;
   flex-direction: column;
   width: 900px;
-  min-height: 70vh;
   border-radius: 20px;
   padding: 30px;
   gap: 30px;
   background-color: var(--color-onix);
+  height: 80vh;
 }
 
 .app-header {
@@ -88,6 +94,12 @@
   padding: 10px;
   background-color: var(--color-tiger-flame);
   border-radius: 50%;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.task-input__add:hover {
+  background-color: color-mix(in srgb, var(--color-tiger-flame) 80%, white);
+  transform: scale(1.1);
 }
 
 .task-input__add > svg {
@@ -101,10 +113,18 @@
   padding: 20px;
   border: none;
   background-color: var(--color-carbon-black);
+  font-size: 18px;
+  color: var(--color-pate-oak);
 }
 
 .task-input__field::placeholder {
-  font-size: 17px;
+  font-size: 18px;
+}
+
+.task-input__field:focus {
+  outline: none;
+  border: 2px solid #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .task-list {
@@ -151,4 +171,20 @@
 
 .btn-item > svg {
   stroke: var(--color-pate-oak);
+  transition: stroke 0.15s ease;
+}
+
+.btn-item:hover > svg {
+  stroke: var(--color-tiger-flame);
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    margin: 20px;
+  }
+
+  .progress-card {
+    padding: 30px 20px;
+    gap: 10px;
+  }
 }
