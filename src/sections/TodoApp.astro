@@ -9,7 +9,7 @@ import "../styles/global.css";
   <header class="app-header">
     <span class="app-logo">TodoApp</span>
 
-    <button class="app-settings"> <IconExit /> </button>
+    <button class="btn app-settings"> <IconExit /> </button>
   </header>
 
   <div class="app-content">
@@ -33,12 +33,13 @@ import "../styles/global.css";
         placeholder="write your next task"
       />
 
-      <button class="task-input__add"> <IconPlus /> </button>
+      <button class="btn task-input__add"> <IconPlus /> </button>
     </section>
 
     <!-- Task List -->
     <section class="task-list">
       <!-- Task item -->
+      <TaskList />
       <TaskList />
     </section>
   </div>
